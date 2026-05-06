@@ -1,0 +1,68 @@
+/* SECTION */
+.contact{
+    padding: 100px 8%;
+    text-align: center;
+}
+
+/* FORM */
+.contact-form{
+    max-width: 600px;
+    margin: 40px auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* INPUTS */
+.contact-form input,
+.contact-form textarea{
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    background: rgba(255,255,255,0.03);
+
+    color: white;
+
+    outline: none;
+}
+
+/* BUTTON */
+.contact-form button{
+
+    padding: 15px;
+
+    border-radius: 50px;
+
+    border: none;
+
+    background: var(--primary-color);
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(124,58,237,0.3);
+}
+
+/* INFO */
+.contact-info{
+    margin-top: 40px;
+
+    color: var(--gray-text);
+}
+
+.contact-info p{
+    margin: 5px 0;
+}

@@ -1,0 +1,35 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root{
+    --primary-color: #7c3aed;
+    --secondary-color: #0f172a;
+    --text-color: #ffffff;
+    --gray-color: #94a3b8;
+
+    --main-font: 'Poppins', sans-serif;
+}
+
+/* Body */
+body{
+    background: var(--secondary-color);
+    color: var(--text-color);
+    font-family: var(--main-font);
+    overflow-x: hidden;
+}
+
+/* Links */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* List */
+ul{
+    list-style: none;
+}

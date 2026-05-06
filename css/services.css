@@ -1,0 +1,44 @@
+.services{
+    padding: 100px 8%;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.services-container{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-box{
+    width: 300px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    background: rgba(255,255,255,0.03);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: 0.3s ease;
+}
+
+.service-box:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(124,58,237,0.2);
+}
+
+.service-box h2{
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.service-box p{
+    color: var(--gray-text);
+}

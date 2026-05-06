@@ -1,0 +1,147 @@
+/* HERO */
+.hero{
+    min-height: 100vh;
+
+    padding: 0 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+
+    position: relative;
+}
+
+/* LEFT SIDE */
+.hero-content{
+    flex: 1;
+}
+
+/* GREETING */
+.hero-greeting{
+    font-size: 1.1rem;
+
+    color: var(--primary-color);
+
+    margin-bottom: 15px;
+}
+
+/* NAME */
+.hero-content h1{
+    font-size: 4.5rem;
+
+    line-height: 1.1;
+
+    margin-bottom: 15px;
+}
+
+/* GRADIENT NAME */
+.hero-content h1 span{
+
+    background: linear-gradient(
+        90deg,
+        #7c3aed,
+        #a855f7,
+        #ec4899
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+}
+
+/* TITLE */
+.hero-content h2{
+    font-size: 1.8rem;
+
+    color: var(--gray-text);
+
+    margin-bottom: 25px;
+}
+
+/* DESCRIPTION */
+.hero-description{
+    max-width: 550px;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+/* BUTTONS */
+.hero-buttons{
+    display: flex;
+
+    gap: 20px;
+}
+
+.btn{
+    padding: 14px 30px;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+/* PRIMARY */
+.primary-btn{
+    background: linear-gradient(
+        90deg,
+        #7c3aed,
+        #a855f7
+    );
+}
+
+/* SECONDARY */
+.secondary-btn{
+    border: 2px solid var(--primary-color);
+}
+
+/* HOVER */
+.btn:hover{
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(124,58,237,0.3);
+}
+
+/* IMAGE */
+.hero-image{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+.hero-image img{
+    width: 420px;
+
+    border-radius: 30px;
+
+    box-shadow: 0 0 40px rgba(124,58,237,0.25);
+}
+
+#typing-text::after{
+    content: "|";
+
+    margin-left: 5px;
+
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink{
+
+    0%,100%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+}
