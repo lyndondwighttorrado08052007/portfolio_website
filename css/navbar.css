@@ -106,12 +106,15 @@
         padding: 20px 5%;
     }
 
-    /* SHOW BUTTON */
+   .nav-logo {
+    display: none;
+   }
+
     .menu-toggle{
         display: block;
     }
 
-    /* MOBILE MENU */
+   
     .nav-menu{
 
         position: absolute;
