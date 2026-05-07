@@ -1,42 +1,12 @@
-window.addEventListener("scroll", () => {
+const menuToggle =
+    document.querySelector(".menu-toggle");
 
-    const navbar = document.querySelector(".navbar");
-
-    if(window.scrollY > 50){
-        navbar.classList.add("scrolled");
-    }
-    else{
-        navbar.classList.remove("scrolled");
-    }
-
-});
+const navMenu =
+    document.querySelector(".nav-menu");
 
 
-window.addEventListener("DOMContentLoaded", () => {
+menuToggle.addEventListener("click", () => {
 
-    const currentPage = window.location.pathname.split("/").pop();
-
-    const navLinks = document.querySelectorAll(".nav-link");
-
-    navLinks.forEach(link => {
-
-        const linkPage = link.getAttribute("href");
-
-        if(linkPage === currentPage){
-            link.classList.add("active");
-        }
-
-    });
-
-});
-
-window.addEventListener("click", (e) => {
-
-    const toggle = document.querySelector(".menu-toggle");
-    const menu = document.querySelector(".nav-menu");
-
-    if(e.target === toggle){
-        menu.classList.toggle("show");
-    }
+    navMenu.classList.toggle("active");
 
 });
