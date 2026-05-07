@@ -145,3 +145,53 @@
     }
 
 }
+
+@media (max-width: 768px){
+
+    .hero{
+
+        flex-direction: column-reverse;
+
+        justify-content: center;
+
+        text-align: center;
+
+        padding: 120px 8% 60px;
+
+    }
+
+    .hero-content h1{
+
+        font-size: 3rem;
+
+    }
+
+    .hero-content h2{
+
+        font-size: 1.3rem;
+
+    }
+
+    .hero-description{
+
+        max-width: 100%;
+
+    }
+
+    /* BUTTONS */
+    .hero-buttons{
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+    }
+
+    /* IMAGE */
+    .hero-image img{
+
+        width: 280px;
+
+    }
+
+}

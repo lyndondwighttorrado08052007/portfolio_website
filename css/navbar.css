@@ -22,19 +22,19 @@
     transition: 0.3s ease;
 }
 
-/* LOGO */
+
 .nav-logo a{
     font-size: 1.4rem;
     font-weight: 700;
 }
 
-/* MENU */
+
 .nav-menu{
     display: flex;
     gap: 30px;
 }
 
-/* NAV LINKS */
+
 .nav-menu a{
     position: relative;
 
@@ -44,12 +44,11 @@
     transition: 0.3s ease;
 }
 
-/* TEXT HOVER */
+
 .nav-menu a:hover{
     color: var(--primary-color);
 }
 
-/* UNDERLINE EFFECT */
 .nav-menu a::before{
     content: "";
 
@@ -68,12 +67,11 @@
     transition: 0.3s ease;
 }
 
-/* ON HOVER */
+
 .nav-menu a:hover::before{
     width: 100%;
 }
 
-/* SCROLL EFFECT */
 .navbar.scrolled{
     padding: 15px 8%;
 
@@ -90,7 +88,6 @@
     width: 100%;
 }
 
-/* MENU BUTTON */
 .menu-toggle{
     display: none;
 
@@ -99,47 +96,102 @@
     cursor: pointer;
 }
 
+
 /* MOBILE */
 @media (max-width: 768px){
 
     .navbar{
-        padding: 20px 5%;
+
+        display: contents;
+        
+        background: transparent;
+
+        backdrop-filter: none;
+
+        box-shadow: none;
+
+        justify-content: flex-end;
+
+        padding: 25px 5%;
+        
+        border: none;
     }
 
-   .nav-logo {
-    display: none;
-   }
-
-    .menu-toggle{
-        display: block;
-    }
-
-   
-    .nav-menu{
-
-        position: absolute;
-
-        top: 100%;
-        left: 0;
-
-        width: 100%;
-
-        background: rgba(15,23,42,0.98);
-
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 25px;
-
-        padding: 30px 0;
-
+    /* HIDE LOGO */
+    .nav-logo{
         display: none;
     }
 
-    /* ACTIVE MENU */
-    .nav-menu.active{
+
+    .menu-toggle{
+
         display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        position: fixed;
+
+        top: 20px;
+        right: 20px;
+
+        width: 50px;
+        height: 50px;
+
+        border-radius: 12px;
+
+        background: rgba(255,255,255,0.05);
+
+        border: 1px solid rgba(255,255,255,0.08);
+
+        backdrop-filter: blur(10px);
+
+        font-size: 1.5rem;
+
+        cursor: pointer;
+
+        z-index: 1001;
+
+    }
+
+    .nav-menu{
+
+        position: fixed;
+
+        top: 0;
+        left: -100%;
+
+        width: 200px;
+        height: 100vh;
+
+        background: rgba(15,23,42,0.75);
+
+        backdrop-filter: blur(20px);
+
+        border-right: 1px solid rgba(255,255,255,0.08);
+
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 35px;
+
+        transition: 0.4s ease;
+
+        z-index: 1000;
+    }
+
+    /* SHOW MENU */
+    .nav-menu.active{
+        left: 0;
+    }
+
+    /* LINKS */
+    .nav-link{
+
+        font-size: 1.1rem;
+
     }
 
 }
