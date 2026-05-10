@@ -1,0 +1,119 @@
+.achievements{
+    padding: 120px 8%;
+}
+
+/* TITLE */
+.section-title{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10px;
+
+    background: linear-gradient(90deg,#7c3aed,#c084fc,#7c3aed);
+    background-size: 200% auto;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: move 4s linear infinite;
+}
+
+@keyframes move{
+    0%{background-position:0%}
+    100%{background-position:200%}
+}
+
+.section-subtitle{
+    text-align: center;
+    color: var(--muted);
+    margin-bottom: 60px;
+}
+
+/* GRID */
+.achievements-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* CARD (UPGRADED MODERN LOOK) */
+.achieve-card{
+    padding: 25px;
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.06);
+
+    transition: 0.35s ease;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* glow effect */
+.achieve-card::before{
+    content: "";
+    position: absolute;
+
+    width: 200px;
+    height: 200px;
+
+    background: var(--primary-color);
+    filter: blur(100px);
+    opacity: 0;
+    transition: 0.4s ease;
+
+    top: -50px;
+    right: -50px;
+}
+
+.achieve-card:hover::before{
+    opacity: 0.15;
+}
+
+.achieve-card:hover{
+    transform: translateY(-6px);
+    border-color: rgba(124,58,237,0.3);
+    box-shadow: 0 15px 35px rgba(124,58,237,0.15);
+}
+
+/* ICON */
+.icon{
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+/* TEXT */
+.achieve-card h2{
+    margin-bottom: 10px;
+}
+
+.achieve-card p{
+    color: var(--muted);
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* BADGES (UPGRADED LOOK) */
+.badge{
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+/* COLORS */
+.gold{
+    background: linear-gradient(90deg,#fbbf24,#f59e0b);
+}
+
+.orange{
+    background: linear-gradient(90deg,#f97316,#fb923c);
+}
+
+.purple{
+    background: linear-gradient(90deg,#7c3aed,#a855f7);
+}

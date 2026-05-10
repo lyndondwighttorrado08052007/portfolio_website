@@ -1,132 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/projects.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Portfolio</title>
+
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-    <nav class="navbar">
-        <div class="nav-logo">
-            <a href="index.html">
-                Portfolio
-            </a>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-logo">
+        <a href="index.html">Portfolio</a>
+    </div>
+
+    <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="resume.html">Resume</a></li>
+    </ul>
+
+    <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</nav>
+
+<!-- PROJECTS -->
+<section class="projects">
+
+    <h1 class="section-title">My Projects</h1>
+
+    <!-- FEATURED -->
+    <div class="featured-project">
+
+        <div class="project-image">
+            <img src="images/project1.png" alt="Basketball Project">
         </div>
 
-        <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html" class="nav-link">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="featured-content">
 
-        <div class="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </nav>
+            <h2>🏀 Basketball Sports Website</h2>
 
-  <section class="projects fade-in">
+            <p>
+                A responsive sports website built using HTML, CSS, and JavaScript.
+                Focused on UI design, layout structure, and user experience.
+            </p>
 
-      <h1 class="section-title">My Projects</h1>
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
 
-      <div class="project-container">
+            <div class="buttons">
 
-          <!-- CARD 1 -->
-          <div class="project-card">
+                <a href="https://lyndondwighttorrado08052007.github.io/sports_project_final/"
+                   target="_blank"
+                   class="btn primary">
 
-              <img src="images/project1.jpg" alt="Project">
+                    <i class="fa-solid fa-eye"></i>
+                    Live Demo
+                </a>
 
-              <h3>Portfolio Website</h3>
+                <a href="https://lyndondwighttorrado08052007.github.io/sports_project_final/"
+                   target="_blank"
+                   class="btn secondary">
 
-              <p>
-                  Modern responsive personal portfolio design.
-              </p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Visit
+                </a>
 
-              <a href="#">
-                  View Project
-              </a>
-
-          </div>
-
-
-          <!-- CARD 2 -->
-          <div class="project-card">
-
-              <img src="images/project2.jpg" alt="Project">
-
-              <h3>School Management</h3>
-
-              <p>
-                  Student information system project.
-              </p>
-
-              <a href="#">
-                  View Project
-              </a>
-
-          </div>
-
-
-          <!-- CARD 3 -->
-          <div class="project-card">
-              <img src="images/project3.jpg" alt="Project">
-
-              <h3>E-Commerce UI</h3>
-
-              <p>
-                  Online shopping website design.
-              </p>
-
-              <a href="#">
-                  View Project
-              </a>
-          </div>
-
-      </div>
-  </section>
-
-<footer class="footer">
-
-    <div class="footer-content">
-
-        <p>Building modern, clean, and user-focused digital experiences.</p>
-
-        <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </div>
-
-        <div class="footer-social">
-
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            </div>
 
         </div>
-
-        <p class="copyright">
-            © 2026 All Rights Reserved.
-        </p>
 
     </div>
 
+    <!-- PROJECT LIST -->
+    <div class="project-list">
+
+        <div class="project-item">
+
+            <div>
+                <h3>Tuition Management System</h3>
+                <p>PHP + MySQL system for managing student tuition records.</p>
+            </div>
+
+            <a href="https://arnold-nava.42web.io/app/views/client/register.php?i=1"
+               target="_blank"
+               class="small-btn">
+
+                View
+
+            </a>
+
+        </div>
+
+        <div class="project-item">
+
+            <div>
+                <h3>Windows Form System</h3>
+                <p>C# desktop application (offline system project).</p>
+            </div>
+
+            <span class="status desktop">Desktop App</span>
+
+        </div>
+
+        <div class="project-item coming">
+
+            <div>
+                <h3>More Projects</h3>
+                <p>New systems and web apps coming soon as I improve my skills.</p>
+            </div>
+
+            <span class="status">Coming Soon</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>Building modern digital experiences.</p>
+        <p>© 2026 All Rights Reserved.</p>
+    </div>
 </footer>
 
-  <script src="js/reveal.js"></script>
-  <script src="js/loadComponents.js"></script>
-  <script src="js/navbar.js"></script>
+<script src="js/navbar.js"></script>
 
 </body>
 </html>

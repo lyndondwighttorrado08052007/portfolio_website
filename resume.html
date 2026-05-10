@@ -1,126 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/resume.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Portfolio</title>
+
+    <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-    <nav class="navbar">
-        <div class="nav-logo">
-            <a href="index.html">
-                Portfolio
-            </a>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-logo">
+        <a href="index.html">Portfolio</a>
+    </div>
+
+    <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="resume.html" class="nav-link active">Resume</a></li>
+    </ul>
+
+    <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</nav>
+
+<!-- RESUME -->
+<section class="resume">
+
+    <div class="resume-header">
+
+        <h1>My Resume</h1>
+
+        <p>
+            A summary of my education, skills, and achievements as a student developer.
+        </p>
+
+        <a href="files/resume.pdf" download class="download-btn">
+            <i class="fa-solid fa-download"></i>
+            Download CV
+        </a>
+
+    </div>
+
+    <div class="resume-container">
+
+        <!-- LEFT -->
+        <div class="resume-left">
+
+            <div class="block">
+
+                <h2>Personal Info</h2>
+
+                <p><strong>Name:</strong> Lyndon Dwight Torrado</p>
+                <p><strong>Course:</strong> ACT (Associate in Computer Technology)</p>
+                <p><strong>Status:</strong> First Year College</p>
+
+            </div>
+
+            <div class="block">
+
+                <h2>Contact</h2>
+
+                <p>Email: example@email.com</p>
+                <p>Location: Philippines</p>
+
+            </div>
+
         </div>
 
-        <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="resume.html" class="nav-link">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <!-- RIGHT -->
+        <div class="resume-right">
 
-        <div class="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </nav>
-
-    <section class="resume fade-in">
-        <h1 class="section-title">My Resume</h1>
-
-        <!-- DOWNLOAD BUTTON -->
-        <div class="resume-download">
-
-            <a href="files/Lyndon_Resume.pdf" download>
-                Download CV
-            </a>
-
-        </div>
-
-        <div class="resume-container">
-
-            <!-- EDUCATION -->
-            <div class="resume-box">
+            <div class="block">
 
                 <h2>Education</h2>
 
-                <p>
-                    First Year College - ACT Program
-                </p>
-
-                <p>
-                    Tinajero National High School Annex
-                </p>
+                <p>CCST - College (ACT)</p>
+                <p>Senior High School - Academic Achiever</p>
+                <p>TESDA NC II Holder</p>
 
             </div>
 
-            <!-- SKILLS SUMMARY -->
-            <div class="resume-box">
+            <div class="block">
 
                 <h2>Skills</h2>
 
-                <p>HTML, CSS, JavaScript</p>
-                <p>PHP, MySQL</p>
-                <p>Git & GitHub</p>
+                <div class="tags">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+
+                </div>
 
             </div>
 
-            <!-- EXPERIENCE -->
-            <div class="resume-box">
+            <div class="block">
 
-                <h2>Experience</h2>
+                <h2>Achievements</h2>
 
-                <p>
-                    Built student management system (school project)
-                </p>
-
-                <p>
-                    Developed responsive portfolio website
-                </p>
+                <p>Academic Achiever (Senior High)</p>
+                <p>NC II Certified</p>
+                <p>Multiple Web Projects Completed</p>
 
             </div>
 
         </div>
-    </section>
 
-    <footer class="footer">
-        <div class="footer-content">
+    </div>
 
-            <p>Building modern, clean, and user-focused digital experiences.</p>
+</section>
 
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
-            </div>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>Building modern digital experiences.</p>
+        <p>© 2026 All Rights Reserved.</p>
+    </div>
+</footer>
 
-            <div class="footer-social">
+<script src="js/navbar.js"></script>
 
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-linkedin"></i>
-
-            </div>
-
-            <p class="copyright">
-                © 2026 All Rights Reserved.
-            </p>
-
-        </div>
-    </footer>
-
-  <script src="js/loadComponents.js"></script>
-  <script src="js/navbar.js"></script>
 </body>
 </html>

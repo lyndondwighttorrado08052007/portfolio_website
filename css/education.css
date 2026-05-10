@@ -1,0 +1,155 @@
+.education{
+    padding: 120px 8%;
+}
+
+/* TITLE */
+.section-title{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10px;
+
+    background: linear-gradient(90deg,#7c3aed,#c084fc,#7c3aed);
+    background-size: 200% auto;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: move 4s linear infinite;
+}
+
+@keyframes move{
+    0%{background-position:0%}
+    100%{background-position:200%}
+}
+
+.section-subtitle{
+    text-align: center;
+    color: var(--muted);
+    margin-bottom: 60px;
+}
+
+/* TIMELINE STYLE (UPGRADED FEEL) */
+.edu-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    position: relative;
+}
+
+/* vertical line */
+.edu-container::before{
+    content: "";
+    position: absolute;
+
+    left: 18px;
+    top: 0;
+    bottom: 0;
+
+    width: 2px;
+    background: rgba(124,58,237,0.25);
+}
+
+/* CARD */
+.edu-card{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+
+    padding: 25px;
+    border-radius: 15px;
+
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.06);
+
+    transition: 0.3s ease;
+
+    position: relative;
+    margin-left: 40px;
+}
+
+.edu-card:hover{
+    transform: translateY(-5px);
+    border-color: rgba(124,58,237,0.4);
+    box-shadow: 0 10px 25px rgba(124,58,237,0.12);
+}
+
+/* timeline dot */
+.edu-card::before{
+    content: "";
+    position: absolute;
+
+    left: -30px;
+    top: 30px;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+    background: var(--primary-color);
+    box-shadow: 0 0 15px rgba(124,58,237,0.5);
+}
+
+/* ICON */
+.edu-icon{
+    font-size: 2rem;
+    color: var(--primary-color);
+    min-width: 50px;
+}
+
+/* TEXT */
+.edu-content h2{
+    margin-bottom: 5px;
+}
+
+.edu-content h4{
+    color: var(--muted);
+    margin-bottom: 5px;
+}
+
+.edu-content p{
+    color: var(--muted);
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* YEAR */
+.year{
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: rgba(124,58,237,0.15);
+    color: #c084fc;
+    font-size: 0.8rem;
+}
+
+/* BADGES */
+.badge{
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: #22c55e;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.cert{
+    background: #f59e0b;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+
+    .edu-card{
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .edu-container::before{
+        left: 8px;
+    }
+
+    .edu-card::before{
+        left: -22px;
+    }
+}

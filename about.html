@@ -1,106 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/about.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Portfolio</title>
+
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-    <nav class="navbar">
-        <div class="nav-logo">
-            <a href="index.html">
-                Portfolio
-            </a>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-logo">
+        <a href="index.html">Portfolio</a>
+    </div>
+
+    <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="nav-link active">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="resume.html">Resume</a></li>
+    </ul>
+
+    <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</nav>
+
+<!-- ABOUT -->
+<section class="about">
+
+    <h1 class="section-title">About Me</h1>
+
+    <!-- INTRO -->
+    <div class="about-intro">
+
+        <div class="about-text">
+
+            <h2>Hi, I’m Lyndon Dwight Torrado</h2>
+
+            <p>
+                I am a First Year ACT student passionate about web development,
+                UI design, and building real-world systems. I enjoy creating
+                clean, modern, and responsive websites that focus on user experience.
+            </p>
+
+            <p>
+                I also have experience in academic projects like systems development,
+                and I continuously improve my skills in HTML, CSS, JavaScript, and PHP.
+            </p>
+
         </div>
 
-        <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="nav-link">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-        <div class="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
+        <div class="about-image">
+            <img src="images/profile.jpg" alt="Profile">
         </div>
-    </nav>
 
-  <section class="about">
-      <h1 class="section-title">About Me</h1>
+    </div>
 
-      <div class="about-container">
+    <!-- JOURNEY -->
+    <div class="timeline">
 
-          <!-- LEFT IMAGE -->
-          <div class="about-image">
+        <h2 class="sub-title">My Journey</h2>
 
-              <img src="images/profile.jpg" alt="Lyndon">
+        <div class="timeline-item">
 
-          </div>
+            <div class="dot"></div>
 
-          <!-- RIGHT TEXT -->
-          <div class="about-text">
+            <div class="content">
 
-              <h2>Hi, I'm Lyndon Dwight V. Torrado</h2>
+                <h3>Senior High School</h3>
+                <span>Academic Achiever</span>
 
-              <p>
-                  I am a First Year ACT student passionate about
-                  web development and creating modern, responsive websites.
-              </p>
+                <p>
+                    Completed Senior High School with academic excellence
+                    and developed my foundation in ICT.
+                </p>
 
-              <p>
-                  I enjoy learning frontend technologies such as HTML, CSS,
-                  and JavaScript, and I am currently improving my skills
-                  in building real-world projects.
-              </p>
+            </div>
 
-              <p>
-                  My goal is to become a professional developer who builds
-                  clean, efficient, and user-friendly systems.
-              </p>
+        </div>
 
-          </div>
+        <div class="timeline-item">
 
-      </div>
-  </section>
+            <div class="dot"></div>
 
-  <footer class="footer">
-      <div class="footer-content">
+            <div class="content">
 
-          <p>Building modern, clean, and user-focused digital experiences.</p>
+                <h3>NC II Certification</h3>
+                <span>TESDA Certified</span>
 
-          <div class="footer-links">
-              <a href="index.html">Home</a>
-              <a href="projects.html">Projects</a>
-              <a href="contact.html">Contact</a>
-          </div>
+                <p>
+                    Earned NC II certification which strengthened my technical and computer skills.
+                </p>
 
-          <div class="footer-social">
+            </div>
 
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-github"></i>
-              <i class="fa-brands fa-linkedin"></i>
+        </div>
 
-          </div>
+        <div class="timeline-item">
 
-          <p class="copyright">
-              © 2026 All Rights Reserved.
-          </p>
+            <div class="dot"></div>
 
-      </div>
-  </footer>
+            <div class="content">
 
-  <script src="js/loadComponents.js"></script>
-  <script src="js/navbar.js"></script>
+                <h3>College - ACT</h3>
+                <span>Current</span>
+
+                <p>
+                    Currently studying Associate in Computer Technology,
+                    focusing on programming and system development.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>Building modern digital experiences.</p>
+        <p>© 2026 All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="js/navbar.js"></script>
+
 </body>
 </html>

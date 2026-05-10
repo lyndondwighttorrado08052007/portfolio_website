@@ -3,78 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Home | Portfolio</title>
+
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/main.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 
-    <nav class="navbar">
-        <div class="nav-logo">
-            <a href="index.html">
-                Portfolio
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-logo">
+        <a href="index.html">Portfolio</a>
+    </div>
+
+    <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="resume.html">Resume</a></li>
+    </ul>
+
+    <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+    <!-- BACKGROUND GLOW -->
+    <div class="hero-bg"></div>
+
+    <!-- LEFT -->
+    <div class="hero-content">
+
+        <p class="hero-greeting">Hello, I'm</p>
+
+        <h1>
+            <span>Lyndon Dwight</span><br>
+            Torrado
+        </h1>
+
+        <h2 id="typing-text" data-words="Frontend Developer|UI Designer|Student Developer"></h2>
+
+        <p class="hero-description">
+            First Year ACT student passionate about building modern websites,
+            creative interfaces, and interactive digital experiences.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="projects.html" class="btn primary-btn">
+                <i class="fa-solid fa-code"></i>
+                View Projects
             </a>
+
+            <a href="contact.html" class="btn secondary-btn">
+                <i class="fa-solid fa-paper-plane"></i>
+                Contact Me
+            </a>
+
         </div>
 
-        <ul class="nav-menu">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    </div>
 
-        <div class="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </nav>
+    <!-- RIGHT -->
+    <div class="hero-image">
+        <img src="images/profile.jpg" alt="Lyndon">
+    </div>
 
-  <section class="hero">
-      <!-- LEFT SIDE -->
-      <div class="hero-content">
-          <p class="hero-greeting">
-              Hello, I'm
-          </p>
+</section>
 
-          <h1>
-              <span>Lyndon Dwight</span><br>
-              Torrado
-          </h1>
-
-          <h2 id="typing-text">Frontend Developer & UI Designer</h2>
-
-          <p class="hero-description">
-              First Year ACT student passionate about building modern websites,
-              creative interfaces, and interactive digital experiences.
-          </p>
-
-          <div class="hero-buttons">
-
-              <a href="projects.html" class="btn primary-btn">
-                  View Projects
-              </a>
-
-              <a href="contact.html" class="btn secondary-btn">
-                  Contact Me
-              </a>
-          </div>
-      </div>
-
-      <!-- RIGHT SIDE -->
-      <div class="hero-image">
-          <img src="images/profile.jpg" alt="Lyndon">
-      </div>
-  </section>
-
-
-
+<!-- FOOTER -->
 <footer class="footer">
 
     <div class="footer-content">
@@ -88,23 +99,19 @@
         </div>
 
         <div class="footer-social">
-
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-github"></i>
             <i class="fa-brands fa-linkedin"></i>
-
         </div>
 
-        <p class="copyright">
-            © 2026 All Rights Reserved.
-        </p>
+        <p class="copyright">© 2026 All Rights Reserved.</p>
 
     </div>
 
 </footer>
 
-  <script src="js/typing.js"></script>
-  <script src="js/loadComponents.js"></script>
-  <script src="js/navbar.js"></script>
+<script src="js/typing.js"></script>
+<script src="js/navbar.js"></script>
+
 </body>
 </html>
